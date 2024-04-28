@@ -14,12 +14,13 @@ class Login : AppCompatActivity() {
     private lateinit var edtPassword: EditText
     private lateinit var btnLogin: Button
     private lateinit var btnSignUp: Button
-
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        supportActionBar?.hide()
 
         mAuth= FirebaseAuth.getInstance()
 
