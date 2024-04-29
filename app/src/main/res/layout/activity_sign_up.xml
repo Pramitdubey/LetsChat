@@ -4,21 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".SignUp"
+    android:background="@drawable/color2">
 
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/letschat_transparent_icon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:layout_below="@+id/app_logo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+          >
 
     <EditText
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/app_logo"
         android:layout_marginTop="10dp"
         android:background="@drawable/edt_background"
         android:paddingLeft="13dp"
@@ -31,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/edt_name"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edt_background"
         android:paddingLeft="13dp"
         android:hint="Email"
@@ -43,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/edt_email"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edt_background"
         android:paddingLeft="13dp"
         android:hint="Password"
@@ -60,7 +76,9 @@
         android:textColor="@color/white"
         android:background="@drawable/edt_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
 
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
